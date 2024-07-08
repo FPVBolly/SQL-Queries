@@ -85,8 +85,6 @@ SELECT *
 FROM employee_details
 WHERE salary NOT <60000.00
 
-
-
 SELECT employee_last_name
 FROM employee_details
 ORDER BY employee_last_name ASC
