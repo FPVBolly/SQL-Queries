@@ -44,10 +44,6 @@ where chip_id>004 or chip_id<002;
 
 select *
 from pet_details
-where chip_id>004 or chip_id<002;
-
-select *
-from pet_details
 where Not animal_type = 'Cat';
 -- Dog Bird Fish Goat Snake Iguana --
 
