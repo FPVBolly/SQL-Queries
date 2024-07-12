@@ -67,11 +67,11 @@ WHERE salary >= 45000;
 
 SELECT employee_id, job_title, employee_first_name, employee_last_name, age, salary, contact_number, dob
 FROM employee_details
-WHERE salary >= 45000 AND < 20000;
+WHERE salary >= 45000 AND salary< 20000;
 
 SELECT *
 FROM employee_details
-WHERE salary <= 45000.00 AND > 20000.00;
+WHERE salary <= 45000.00 AND salary> 20000.00;
 
 SELECT dob
 FROM employee_details
@@ -83,23 +83,25 @@ WHERE employee_id=1 OR 4;
 
 SELECT *
 FROM employee_details
-WHERE salary NOT <60000.00
+WHERE NOT salary <60000.00;
+
+---
 
 SELECT employee_last_name
 FROM employee_details
-ORDER BY employee_last_name ASC
+ORDER BY employee_last_name ASC;
 
 SELECT sum(salary)
-FROM employee_details
+FROM employee_details;
 
 SELECT min(salary)
-FROM employee_details
+FROM employee_details;
 
 SELECT max(salary)
-FROM employee_details
+FROM employee_details;
 
 SELECT count(salary)
-FROM employee_details
+FROM employee_details;
 
 SELECT count(*)
 FROM employee_details
